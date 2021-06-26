@@ -1,6 +1,14 @@
-.DS_Store
+# Dependencies
 /node_modules/
+
+# React build file
+build/
+
+# ReScript
 /lib/
 .bsb.lock
 .merlin
 *.bs.js
+
+# Unix
+.DS_Store
