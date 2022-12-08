@@ -2,13 +2,12 @@
 /node_modules/
 
 # React build file
-build/
+dist/
 
 # ReScript
 /lib/
 .bsb.lock
 .merlin
-*.bs.js
 
 # Unix
 .DS_Store
