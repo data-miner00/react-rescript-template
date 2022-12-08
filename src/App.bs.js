@@ -3,9 +3,11 @@
 import * as React from "react";
 
 function App(Props) {
+  var name = "Andres";
+  var element = name !== undefined ? React.createElement("div", undefined, "Hello " + name + "") : null;
   return React.createElement("div", {
               className: "app"
-            }, React.createElement("h1", undefined, "Hello world"));
+            }, element);
 }
 
 var make = App;

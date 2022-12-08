@@ -1,7 +1,13 @@
 @react.component
 let make = () => {
-  
+  let name = Some("Andres")
+
+  let element = switch name {
+    | Some(name) => <div>{`Hello ${name}`->React.string}</div>
+    | None => React.null
+  }
+
   <div className="app">
-    <h1>{React.string("Hello world")}</h1>
+    element
   </div>
 }
