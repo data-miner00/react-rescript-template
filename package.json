@@ -1,8 +1,10 @@
 {
   "scripts": {
+    "build": "esbuild src/index.bs.js --bundle --minify --outfile=public/dist/bundle.js",
     "watch": "node esbuild.config.js",
     "start": "lite-server",
-    "build": "rescript build"
+    "build:res": "rescript build",
+    "watch:res": "rescript build -w"
   },
   "dependencies": {
     "react": "^18.2.0",
