@@ -9,5 +9,6 @@ let make = () => {
 
   <div className="app">
     element
+    <div className="bg-gray-400 font-mono">{"This is styled"->React.string}</div>
   </div>
 }

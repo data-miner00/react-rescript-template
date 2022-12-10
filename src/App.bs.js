@@ -7,7 +7,9 @@ function App(Props) {
   var element = name !== undefined ? React.createElement("div", undefined, "Hello " + name + "") : null;
   return React.createElement("div", {
               className: "app"
-            }, element);
+            }, element, React.createElement("div", {
+                  className: "bg-gray-400 font-mono"
+                }, "This is styled"));
 }
 
 var make = App;

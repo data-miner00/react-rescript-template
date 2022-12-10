@@ -4,7 +4,9 @@
     "watch": "node esbuild.config.js",
     "start": "lite-server",
     "build:res": "rescript build",
-    "watch:res": "rescript build -w"
+    "watch:res": "rescript build -w",
+    "watch:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --watch",
+    "build:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --minify"
   },
   "dependencies": {
     "react": "^18.2.0",
