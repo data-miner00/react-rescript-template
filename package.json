@@ -6,7 +6,8 @@
     "build:res": "rescript build",
     "watch:res": "rescript build -w",
     "watch:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --watch",
-    "build:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --minify"
+    "build:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --minify",
+    "dev": "concurrently --kill-others \"pnpm watch:res\" \"pnpm watch\" \"pnpm watch:tw\" \"pnpm start\""
   },
   "dependencies": {
     "react": "^18.2.0",
