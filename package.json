@@ -1,13 +1,14 @@
 {
   "scripts": {
-    "build": "esbuild src/index.bs.js --bundle --minify --outfile=public/dist/bundle.js",
-    "watch": "node esbuild.config.js",
+    "build:esb": "esbuild src/index.bs.js --bundle --minify --outfile=public/dist/bundle.js",
+    "watch:esb": "node esbuild.config.js",
     "start": "lite-server",
     "build:res": "rescript build",
     "watch:res": "rescript build -w",
     "watch:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --watch",
     "build:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --minify",
-    "dev": "concurrently --kill-others \"pnpm watch:res\" \"pnpm watch\" \"pnpm watch:tw\" \"pnpm start\""
+    "dev": "concurrently --kill-others \"pnpm watch:res\" \"pnpm watch:esb\" \"pnpm watch:tw\" \"pnpm start\"",
+    "build": "pnpm build:res && pnpm build:tw && pnpm build:esb"
   },
   "dependencies": {
     "react": "^18.2.0",
