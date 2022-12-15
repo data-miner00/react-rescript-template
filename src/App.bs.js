@@ -5,12 +5,16 @@ import * as Header$RescriptProjectTemplate from "./components/Header.bs.js";
 
 function App(Props) {
   var name = "Andres";
-  var element = name !== undefined ? React.createElement("div", undefined, "Hello " + name + "") : null;
+  if (name !== undefined) {
+    React.createElement("div", undefined, "Hello " + name + "");
+  }
   return React.createElement("div", {
-              className: "app"
-            }, React.createElement(Header$RescriptProjectTemplate.make, {}), element, React.createElement("div", {
-                  className: "bg-gray-400 font-mono"
-                }, "This is styled"));
+              className: "app bg-gradient-to-br from-cyan-600 to-violet-400 min-h-screen"
+            }, React.createElement(Header$RescriptProjectTemplate.make, {}), React.createElement("main", {
+                  className: "max-w-[1400px] mx-auto text-gray-200"
+                }, React.createElement("h1", {
+                      className: "text-6xl font-bold max-w-[70%]"
+                    }, "Simple And Functional Template Built With React and Rescript")));
 }
 
 var make = App;
