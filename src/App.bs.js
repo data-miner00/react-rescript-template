@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import * as RescriptReactRouter from "@rescript/react/src/RescriptReactRouter.bs.js";
+import * as Home$RescriptProjectTemplate from "./pages/Home.bs.js";
 import * as Default$RescriptProjectTemplate from "./layouts/Default.bs.js";
 import * as Features$RescriptProjectTemplate from "./pages/Features.bs.js";
 
@@ -35,13 +36,7 @@ function App(Props) {
         exit = 1;
     }
   } else {
-    screen = React.createElement("div", {
-          className: "app"
-        }, React.createElement("main", {
-              className: "max-w-[1400px] mx-auto text-gray-200"
-            }, React.createElement("h1", {
-                  className: "text-6xl font-bold max-w-[70%]"
-                }, "Simple And Functional Template Built With React and Rescript")));
+    screen = React.createElement(Home$RescriptProjectTemplate.make, {});
   }
   if (exit === 1) {
     screen = React.createElement("h1", undefined, "Not found");

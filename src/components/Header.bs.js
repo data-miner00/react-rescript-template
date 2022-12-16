@@ -16,7 +16,16 @@ function Header(Props) {
                           style: {
                             fontWeight: "600"
                           }
-                        }, React.createElement("li", undefined, "Home"), React.createElement("li", undefined, "Features"), React.createElement("li", undefined, "About")), React.createElement("ul", {
+                        }, React.createElement("li", undefined, React.createElement("a", {
+                                  className: "hover:underline",
+                                  href: "/"
+                                }, "Home")), React.createElement("li", undefined, React.createElement("a", {
+                                  className: "hover:underline",
+                                  href: "/features"
+                                }, "Features")), React.createElement("li", undefined, React.createElement("a", {
+                                  className: "hover:underline",
+                                  href: "/about"
+                                }, "About"))), React.createElement("ul", {
                           className: "flex gap-3 items-center pl-6 ml-6 border-l border-gray-200 border-solid"
                         }, React.createElement("li", undefined, React.createElement("svg", {
                                   height: "22",
