@@ -2,7 +2,8 @@
 
 import * as React from "react";
 import * as RescriptReactRouter from "@rescript/react/src/RescriptReactRouter.bs.js";
-import * as Header$RescriptProjectTemplate from "./components/Header.bs.js";
+import * as Default$RescriptProjectTemplate from "./layouts/Default.bs.js";
+import * as Features$RescriptProjectTemplate from "./pages/Features.bs.js";
 
 function App(Props) {
   var url = RescriptReactRouter.useUrl(undefined, undefined);
@@ -11,23 +12,43 @@ function App(Props) {
     React.createElement("div", undefined, "Hello " + name + "");
   }
   var match = url.path;
-  if (!match) {
-    return React.createElement("div", {
-                className: "app bg-gradient-to-br from-cyan-600 to-violet-400 min-h-screen"
-              }, React.createElement(Header$RescriptProjectTemplate.make, {}), React.createElement("main", {
-                    className: "max-w-[1400px] mx-auto text-gray-200"
-                  }, React.createElement("h1", {
-                        className: "text-6xl font-bold max-w-[70%]"
-                      }, "Simple And Functional Template Built With React and Rescript")));
-  }
-  if (match.hd === "user") {
-    var match$1 = match.tl;
-    if (match$1 && !match$1.tl) {
-      return React.createElement("h1", undefined, match$1.hd);
+  var screen;
+  var exit = 0;
+  if (match) {
+    switch (match.hd) {
+      case "features" :
+          if (match.tl) {
+            exit = 1;
+          } else {
+            screen = React.createElement(Features$RescriptProjectTemplate.make, {});
+          }
+          break;
+      case "user" :
+          var match$1 = match.tl;
+          if (match$1 && !match$1.tl) {
+            screen = React.createElement("h1", undefined, match$1.hd);
+          } else {
+            exit = 1;
+          }
+          break;
+      default:
+        exit = 1;
     }
-    
+  } else {
+    screen = React.createElement("div", {
+          className: "app"
+        }, React.createElement("main", {
+              className: "max-w-[1400px] mx-auto text-gray-200"
+            }, React.createElement("h1", {
+                  className: "text-6xl font-bold max-w-[70%]"
+                }, "Simple And Functional Template Built With React and Rescript")));
   }
-  return React.createElement("h1", undefined, "Not found");
+  if (exit === 1) {
+    screen = React.createElement("h1", undefined, "Not found");
+  }
+  return React.createElement(Default$RescriptProjectTemplate.make, {
+              children: screen
+            });
 }
 
 var make = App;
