@@ -7,7 +7,9 @@ function Default(Props) {
   var children = Props.children;
   return React.createElement("div", {
               className: "bg-gradient-to-br from-cyan-600 to-violet-400 min-h-screen"
-            }, React.createElement(Header$RescriptProjectTemplate.make, {}), children);
+            }, React.createElement(Header$RescriptProjectTemplate.make, {}), React.createElement("main", {
+                  className: "max-w-[1400px] mx-auto"
+                }, children));
 }
 
 var make = Default;
