@@ -8,7 +8,8 @@
     "watch:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --watch",
     "build:tw": "tailwindcss -i ./src/index.css -o ./public/dist/tailwind.css --minify",
     "dev": "concurrently --kill-others \"pnpm watch:res\" \"pnpm watch:esb\" \"pnpm watch:tw\" \"pnpm start\"",
-    "build": "pnpm build:res && pnpm build:tw && pnpm build:esb"
+    "build": "pnpm build:res && pnpm build:tw && pnpm build:esb",
+    "purge": "node scripts/purgeDist.js ./public/dist"
   },
   "dependencies": {
     "react": "^18.2.0",
