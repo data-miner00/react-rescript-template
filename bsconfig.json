@@ -15,5 +15,6 @@
   },
   "namespace": true,
   "reason": { "react-jsx": 3 },
-  "bs-dependencies": ["@rescript/react", "bs-fetch", "@glennsl/bs-json"]
+  "bs-dependencies": ["@rescript/react"],
+  "jsx": { "version": 4, "mode": "classic" }
 }
