@@ -240,4 +240,4 @@ List of resources that are helpful and would like to give credit to.
 [issues-shield]: https://img.shields.io/github/issues/data-miner00/react-rescript-template.svg?style=for-the-badge
 [issues-url]: https://github.com/data-miner00/react-rescript-template/issues
 [license-shield]: https://img.shields.io/github/license/data-miner00/react-rescript-template.svg?style=for-the-badge
-[license-url]: https://github.com/data-miner00/react-rescript-template/blob/master/LICENSE.txt
+[license-url]: https://github.com/data-miner00/react-rescript-template/blob/master/LICENSE
