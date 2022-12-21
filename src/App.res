@@ -12,7 +12,7 @@ let make = () => {
     | list{"user", id} => <h1>{id->React.string}</h1>
     | list{"features"} => <Features />
     | list{} => <Home />
-    | _ => <h1>{"Not found"->React.string}</h1>
+    | _ => <NotFound />
   }
 
   <Default>

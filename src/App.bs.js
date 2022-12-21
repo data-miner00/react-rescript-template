@@ -5,6 +5,7 @@ import * as RescriptReactRouter from "@rescript/react/src/RescriptReactRouter.bs
 import * as Home$RescriptProjectTemplate from "./pages/Home.bs.js";
 import * as Default$RescriptProjectTemplate from "./layouts/Default.bs.js";
 import * as Features$RescriptProjectTemplate from "./pages/Features.bs.js";
+import * as NotFound$RescriptProjectTemplate from "./pages/NotFound.bs.js";
 
 function App(Props) {
   var url = RescriptReactRouter.useUrl(undefined, undefined);
@@ -39,7 +40,7 @@ function App(Props) {
     screen = React.createElement(Home$RescriptProjectTemplate.make, {});
   }
   if (exit === 1) {
-    screen = React.createElement("h1", undefined, "Not found");
+    screen = React.createElement(NotFound$RescriptProjectTemplate.make, {});
   }
   return React.createElement(Default$RescriptProjectTemplate.make, {
               children: screen
