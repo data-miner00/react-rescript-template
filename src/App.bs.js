@@ -9,10 +9,6 @@ import * as NotFound$RescriptProjectTemplate from "./pages/NotFound.bs.js";
 
 function App(Props) {
   var url = RescriptReactRouter.useUrl(undefined, undefined);
-  var name = "Andres";
-  if (name !== undefined) {
-    React.createElement("div", undefined, "Hello " + name + "");
-  }
   var match = url.path;
   var screen;
   var exit = 0;
