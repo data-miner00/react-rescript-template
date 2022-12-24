@@ -3,10 +3,44 @@ external image: string = "default"
 
 @react.component
 let make = () => {
+  let code = (code: string) => {
+    <div className="mt-10">
+      <pre className="bg-white text-gray-500 rounded my-2 px-4 py-5 font-mono">
+        <code>{code->React.string}</code>
+      </pre>
+    </div>
+  }
+
+  let rescriptCode = () => code(`let name = Some("Andres")
+
+let element = switch name {
+  | Some(name) => <div>{\`Hello \$\{name\}\`->React.string}</div>
+  | None => React.null
+}`)
+
+  let reactCode = () => code(`let component = () => {
+  <div>
+    <h1>Hello world</h1>
+  </div>
+}`)
+
+  let tailwindCode = () => code(`let component = () => {
+  <div className="bg-slate-500 px-5 py-3">
+    <h1 className="marker:bg-cyan-300 marker:text-white">Hello world</h1>
+  </div>
+}`)
+
   let imageContent = () => {
+    let imageCode = () => code(`@module("../assets/solfarm.png")
+external image: string = "default"
+
+let component = () => {
+  <img src={image} />
+}`)
     <div className="py-5">
       <h1 className="mb-2">{"This is a source imported image that resides at src/assets/ directory."->React.string}</h1>
       <img src={image} alt="Image" />
+      {imageCode()}
     </div>
   }
 
@@ -14,17 +48,17 @@ let make = () => {
     {
       title: "Rescript",
       description: "Adopted the robustly typed functional language that is reliable enough to not introduce bugs in the application if done right.",
-      extraContents: None
+      extraContents: Some(rescriptCode())
     },
     {
       title: "React",
       description: "Tha latest React 18 integrated to the stack. However, @rescript/react binding library only supports up to React 17 at the moment.",
-      extraContents: None
+      extraContents: Some(reactCode())
     },
     {
       title: "Tailwind CSS",
       description: "Latest Tailwind V3+ included and ready to make awesome styles in the Rescript source file itself.",
-      extraContents: None
+      extraContents: Some(tailwindCode())
     },
     {
       title: "Routing",

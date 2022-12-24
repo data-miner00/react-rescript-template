@@ -9,6 +9,13 @@ import * as Feature$RescriptProjectTemplate from "../components/Feature.bs.js";
 var image = SolfarmPng;
 
 function Features(Props) {
+  var code = function (code$1) {
+    return React.createElement("div", {
+                className: "mt-10"
+              }, React.createElement("pre", {
+                    className: "bg-white text-gray-500 rounded my-2 px-4 py-5 font-mono"
+                  }, React.createElement("code", undefined, code$1)));
+  };
   var imageContent = function (param) {
     return React.createElement("div", {
                 className: "py-5"
@@ -17,23 +24,23 @@ function Features(Props) {
                   }, "This is a source imported image that resides at src/assets/ directory."), React.createElement("img", {
                     alt: "Image",
                     src: image
-                  }));
+                  }), code("@module(\"../assets/solfarm.png\")\r\nexternal image: string = \"default\"\r\n\r\nlet component = () => {\r\n  <img src={image} />\r\n}"));
   };
   var features = [
     {
       title: "Rescript",
       description: "Adopted the robustly typed functional language that is reliable enough to not introduce bugs in the application if done right.",
-      extraContents: undefined
+      extraContents: Caml_option.some(code("let name = Some(\"Andres\")\r\n\r\nlet element = switch name {\r\n  | Some(name) => <div>{\`Hello \$\{name\}\`->React.string}</div>\r\n  | None => React.null\r\n}"))
     },
     {
       title: "React",
       description: "Tha latest React 18 integrated to the stack. However, @rescript/react binding library only supports up to React 17 at the moment.",
-      extraContents: undefined
+      extraContents: Caml_option.some(code("let component = () => {\r\n  <div>\r\n    <h1>Hello world</h1>\r\n  </div>\r\n}"))
     },
     {
       title: "Tailwind CSS",
       description: "Latest Tailwind V3+ included and ready to make awesome styles in the Rescript source file itself.",
-      extraContents: undefined
+      extraContents: Caml_option.some(code("let component = () => {\r\n  <div className=\"bg-slate-500 px-5 py-3\">\r\n    <h1 className=\"marker:bg-cyan-300 marker:text-white\">Hello world</h1>\r\n  </div>\r\n}"))
     },
     {
       title: "Routing",
