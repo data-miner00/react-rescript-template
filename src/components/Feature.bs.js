@@ -28,7 +28,7 @@ function Feature(Props) {
             }, React.createElement("header", {
                   className: "py-2 px-6 text-4xl font-bold border-r border-solid border-white"
                 }, addLeadingZeroes(2, index)), React.createElement("main", {
-                  className: "ml-10"
+                  className: "ml-10 w-full"
                 }, React.createElement("h3", {
                       className: "text-3xl font-bold"
                     }, title), React.createElement("p", {

@@ -13,7 +13,7 @@ function Features(Props) {
     return React.createElement("div", {
                 className: "mt-10"
               }, React.createElement("pre", {
-                    className: "bg-white text-gray-500 rounded my-2 px-4 py-5 font-mono"
+                    className: "bg-white text-gray-500 rounded my-2 px-4 py-5 font-mono w-full"
                   }, React.createElement("code", undefined, code$1)));
   };
   var imageContent = function (param) {

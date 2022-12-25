@@ -31,7 +31,7 @@ let make = (~index: int, ~title: string, ~description: string, ~extraContents: o
 
   <div className="p-10 text-white rounded-lg border border-solid border-white flex">
     <header className="py-2 px-6 text-4xl font-bold border-r border-solid border-white">{index->addLeadingZeroes(~zeroes = 2)->React.string}</header>
-    <main className="ml-10">
+    <main className="ml-10 w-full">
       <h3 className="text-3xl font-bold">{title->React.string}</h3>
       <p className="text-xl">{description->React.string}</p>
       extraContents
