@@ -6,9 +6,9 @@ import * as Header$RescriptProjectTemplate from "../components/Header.bs.js";
 function Default(Props) {
   var children = Props.children;
   return React.createElement("div", {
-              className: "bg-gradient-to-br from-cyan-600 to-violet-400 min-h-screen"
+              className: "min-h-screen flex place-items-center"
             }, React.createElement(Header$RescriptProjectTemplate.make, {}), React.createElement("main", {
-                  className: "max-w-[1400px] mx-auto"
+                  className: "max-w-[1400px] mx-auto my-auto"
                 }, children));
 }
 

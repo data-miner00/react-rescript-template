@@ -1,8 +1,8 @@
 @react.component
 let make = (~children: React.element) => {
-  <div className="bg-gradient-to-br from-cyan-600 to-violet-400 min-h-screen">
+  <div className="min-h-screen flex place-items-center">
     <Header />
-    <main className="max-w-[1400px] mx-auto">
+    <main className="max-w-[1400px] mx-auto my-auto">
       children
     </main>
   </div>
