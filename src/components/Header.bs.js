@@ -5,7 +5,7 @@ import * as ThemeSwitcher$RescriptProjectTemplate from "./ThemeSwitcher.bs.js";
 
 function Header(Props) {
   return React.createElement("div", {
-              className: "py-5"
+              className: "py-5 absolute top-0 left-0 w-full"
             }, React.createElement("header", {
                   className: "flex max-w-[1400px] mx-auto justify-between"
                 }, React.createElement("div", {

@@ -1,6 +1,6 @@
 @react.component
 let make = () => {
-  <div className="py-5">
+  <div className="py-5 absolute top-0 left-0 w-full">
     <header className="flex max-w-[1400px] mx-auto justify-between">
       <div className="text-2xl font-semibold">{"React w/ Rescript"->React.string}</div>
       <nav className="flex items-center">
