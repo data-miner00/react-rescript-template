@@ -37,23 +37,23 @@ function Home(Props) {
                       className: "basis-1/2"
                     }, React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Rescript + React",
-                          icon: "This is icon",
+                          icon: "default",
                           children: React.createElement("p", undefined, "React's powerful infrastructure paired with Rescript's robustly typed language system to propel web application development to the next level. React's ", styledA("official documentation", "https://reactjs.org/docs/getting-started.html"), " and Rescript's ", styledA("official documentation", "https://rescript-lang.org/docs/manual/latest/introduction"), " for more details.")
                         }), React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Esbuild",
-                          icon: "This is icon",
+                          icon: "hammer",
                           children: React.createElement("p", undefined, "Blazingly fast JavaScript bundler faster than most of its competitors such as Webpack, Parcel and Rollup. Read the ", styledA("user manual", "https://esbuild.github.io/"), " to learn more.")
                         }), React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Tailwind CSS",
-                          icon: "This is icon",
+                          icon: "tailwind",
                           children: React.createElement("p", undefined, "Styling web applications without leaving the markup. Skip convoluted namings to HTML elements and focus on styles. Take a look on the ", styledA("official documentation", "https://tailwindcss.com/docs/installation"), " to learn more about it.")
                         }), React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Routing",
-                          icon: "This is icon",
+                          icon: "router",
                           children: React.createElement("p", undefined, "This template also includes routing and navigation bar made available out-of-the-box. However, the router used is ", styledA("Rescript Router", "https://rescript-lang.org/docs/react/latest/router"), " which might not be suitable for SPA that stores a lot of state. The conquest for using ", styledA("React Router", "https://reactrouter.com/en/main"), " instead are currently ongoing.")
                         }), React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Dark mode",
-                          icon: "This is icon",
+                          icon: "dark",
                           children: React.createElement("p", undefined, "The dark mode theming has been setup for this template with Tailwind CSS's ", styledA("class dark mode", "https://tailwindcss.com/docs/dark-mode"), ". A ready-to-use theme switcher component is readily provided. It utilizes the browser's ", styledA("Local Storage", "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"), " to persist the theme preference.")
                         }))));
 }

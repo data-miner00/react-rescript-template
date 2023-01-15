@@ -226,6 +226,8 @@ List of resources that are helpful and would like to give credit to.
 - [Issue Template](https://github.com/Josee9988/project-template)
 - [global is not defined](https://github.com/WalletConnect/walletconnect-monorepo/issues/1144)
 - [Router Fix](https://stackoverflow.com/questions/51214294/react-router-refused-to-execute-script-or-styles/51219328#51219328?newreg=9830084f8fd145e9b8397c02a5b85435)
+- [How to do document.createElement in ReScript](https://stackoverflow.com/questions/67625468/how-to-do-document-createelement-in-rescript)
+- [tinymce/rescript-webapi](https://github.com/tinymce/rescript-webapi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

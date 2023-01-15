@@ -102,7 +102,7 @@ let component = () => {
       />)
     ->React.array
 
-  <div className="max-w-[1200px] mx-auto py-14 flex gap-9 flex-col">
+  <div className="max-w-[1200px] mx-auto py-14 flex gap-9 flex-col pt-28">
     features
   </div>
 }

@@ -4,7 +4,7 @@ import * as React from "react";
 
 function NotFound(Props) {
   return React.createElement("div", {
-              className: "py-[150px]"
+              className: "py-[150px]  pt-28"
             }, React.createElement("h1", {
                   className: "text-9xl text-center font-bold mb-10"
                 }, 404), React.createElement("p", {

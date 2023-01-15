@@ -82,7 +82,7 @@ function Features(Props) {
                     });
         }));
   return React.createElement("div", {
-              className: "max-w-[1200px] mx-auto py-14 flex gap-9 flex-col"
+              className: "max-w-[1200px] mx-auto py-14 flex gap-9 flex-col pt-28"
             }, features$1);
 }
 
