@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build:esb": "esbuild src/index.bs.js --bundle --minify --outfile=public/dist/bundle.js --loader:.png=file --loader:.svg=file --loader:.jpg=file",
+    "build:esb": "esbuild src/index.bs.js --bundle --minify --outfile=public/dist/bundle.js --loader:.png=file --loader:.svg=file --loader:.jpg=file --public-path=dist",
     "watch:esb": "node esbuild.config.js",
     "start": "lite-server",
     "build:res": "rescript build",
