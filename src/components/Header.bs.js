@@ -5,11 +5,11 @@ import * as ThemeSwitcher$RescriptProjectTemplate from "./ThemeSwitcher.bs.js";
 
 function Header(Props) {
   return React.createElement("div", {
-              className: "py-5 text-white"
+              className: "py-5"
             }, React.createElement("header", {
                   className: "flex max-w-[1400px] mx-auto justify-between"
                 }, React.createElement("div", {
-                      className: "text-2xl font-semibold text-gray-200"
+                      className: "text-2xl font-semibold"
                     }, "React w/ Rescript"), React.createElement("nav", {
                       className: "flex items-center"
                     }, React.createElement("ul", {

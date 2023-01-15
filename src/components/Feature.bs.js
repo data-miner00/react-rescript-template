@@ -24,9 +24,9 @@ function Feature(Props) {
   var extraContents = Props.extraContents;
   var extraContents$1 = extraContents !== undefined ? Caml_option.valFromOption(extraContents) : null;
   return React.createElement("div", {
-              className: "p-10 text-white rounded-lg border border-solid border-white flex"
+              className: "p-10 rounded-lg border border-solid border-gray-600 dark:border-white flex"
             }, React.createElement("header", {
-                  className: "py-2 px-6 text-4xl font-bold border-r border-solid border-white"
+                  className: "py-2 px-6 text-4xl font-bold border-r border-solid border-gray dark:border-white"
                 }, addLeadingZeroes(2, index)), React.createElement("main", {
                   className: "ml-10 w-full"
                 }, React.createElement("h3", {

@@ -8,8 +8,17 @@
     <title>React Rescript Template</title>
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="dist/tailwind.css" />
+    <script type="text/javascript">
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
   </head>
-  <body class="text-white">
+  <body class="text-slate-700 bg-white dark:text-white dark:bg-gray-800">
     <div id="root"></div>
 
     <script src="dist/bundle.js"></script>

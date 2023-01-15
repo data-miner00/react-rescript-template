@@ -5,7 +5,7 @@ external image: string = "default"
 let make = () => {
   let code = (code: string) => {
     <div className="mt-10">
-      <pre className="bg-white text-gray-500 rounded my-2 px-4 py-5 font-mono w-full">
+      <pre className="bg-gray-200 dark:bg-white text-slate-700 dark:text-gray-500 rounded my-2 px-4 py-5 font-mono w-full">
         <code>{code->React.string}</code>
       </pre>
     </div>
