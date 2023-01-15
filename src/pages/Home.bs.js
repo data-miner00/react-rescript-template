@@ -9,7 +9,7 @@ var logo = RescriptSvg;
 function Home(Props) {
   var styledA = function (text, url) {
     return React.createElement("a", {
-                className: "text-[#E84F4F] hover:bg-[#f5d5d5] transition-colors duration-200",
+                className: "text-[#E84F4F] hover:bg-[#f5d5d5] transition-colors duration-200 dark:hover:bg-slate-500",
                 href: url
               }, text);
   };
@@ -33,7 +33,18 @@ function Home(Props) {
                                   className: ""
                                 }, "Rescript"), " + ", React.createElement("span", {
                                   className: ""
-                                }, "React"), ". What's next?"), React.createElement("nav", undefined, "Home | Features"))), React.createElement("div", {
+                                }, "React"), ". What's next?"), React.createElement("nav", undefined, React.createElement("ul", {
+                                  className: "flex gap-1"
+                                }, React.createElement("li", undefined, React.createElement("a", {
+                                          className: "pr-3 hover:text-[#E84F4F] transition-colors duration-200",
+                                          href: "/"
+                                        }, "Home")), React.createElement("li", undefined, React.createElement("a", {
+                                          className: "border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200",
+                                          href: "/features"
+                                        }, "Features")), React.createElement("li", undefined, React.createElement("a", {
+                                          className: "border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200",
+                                          href: "/404"
+                                        }, "404")))))), React.createElement("div", {
                       className: "basis-1/2"
                     }, React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Rescript + React",

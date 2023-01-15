@@ -4,7 +4,7 @@ external logo: string = "default"
 @react.component
 let make = () => {
   let styledA = (text: string, url: string) => {
-    <a className="text-[#E84F4F] hover:bg-[#f5d5d5] transition-colors duration-200" href={url}>{text->React.string}</a>
+    <a className="text-[#E84F4F] hover:bg-[#f5d5d5] transition-colors duration-200 dark:hover:bg-slate-500" href={url}>{text->React.string}</a>
   }
 
   <div className="app">
@@ -22,7 +22,11 @@ let make = () => {
             {". What's next?"->React.string}
           </h3>
           <nav>
-            {"Home | Features"->React.string}
+            <ul className="flex gap-1">
+              <li><a className="pr-3 hover:text-[#E84F4F] transition-colors duration-200" href="/">{"Home"->React.string}</a></li>
+              <li><a className="border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200" href="/features">{"Features"->React.string}</a></li>
+              <li><a className="border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200" href="/404">{"404"->React.string}</a></li>
+            </ul>
           </nav>
         </div>
       </div>
