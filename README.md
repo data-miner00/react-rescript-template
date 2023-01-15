@@ -61,7 +61,7 @@
 
 ## About The Project
 
-<!-- ![Template screenshot](/public/assets/screenshot.png) -->
+![Template screenshot](/public/assets/screenshot.png)
 
 An extremely opinionated template for building React applications with Rescript. Focus on the application itself rather than all these low-level configuration stuffs.
 
