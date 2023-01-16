@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import RescriptSvg from "../assets/rescript.svg";
+import * as Link$RescriptProjectTemplate from "../components/Link.bs.js";
 import * as Summary$RescriptProjectTemplate from "../components/Summary.bs.js";
 
 var logo = RescriptSvg;
@@ -30,21 +31,24 @@ function Home(Props) {
                             }, "You did it!"), React.createElement("h3", {
                               className: "text-xl mb-8"
                             }, "You've successfully created a project with ", React.createElement("span", {
-                                  className: ""
+                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]"
                                 }, "Rescript"), " + ", React.createElement("span", {
-                                  className: ""
+                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]"
                                 }, "React"), ". What's next?"), React.createElement("nav", undefined, React.createElement("ul", {
                                   className: "flex gap-1"
-                                }, React.createElement("li", undefined, React.createElement("a", {
+                                }, React.createElement("li", undefined, React.createElement(Link$RescriptProjectTemplate.make, {
+                                          to: "/",
                                           className: "pr-3 hover:text-[#E84F4F] transition-colors duration-200",
-                                          href: "/"
-                                        }, "Home")), React.createElement("li", undefined, React.createElement("a", {
+                                          children: "Home"
+                                        })), React.createElement("li", undefined, React.createElement(Link$RescriptProjectTemplate.make, {
+                                          to: "/features",
                                           className: "border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200",
-                                          href: "/features"
-                                        }, "Features")), React.createElement("li", undefined, React.createElement("a", {
+                                          children: "Features"
+                                        })), React.createElement("li", undefined, React.createElement(Link$RescriptProjectTemplate.make, {
+                                          to: "/404",
                                           className: "border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200",
-                                          href: "/404"
-                                        }, "404")))))), React.createElement("div", {
+                                          children: "404"
+                                        })))))), React.createElement("div", {
                       className: "basis-1/2"
                     }, React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Rescript + React",
@@ -61,7 +65,9 @@ function Home(Props) {
                         }), React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Routing",
                           icon: "router",
-                          children: React.createElement("p", undefined, "This template also includes routing and navigation bar made available out-of-the-box. However, the router used is ", styledA("Rescript Router", "https://rescript-lang.org/docs/react/latest/router"), " which might not be suitable for SPA that stores a lot of state. The conquest for using ", styledA("React Router", "https://reactrouter.com/en/main"), " instead are currently ongoing.")
+                          children: React.createElement("p", undefined, "This template also includes routing and navigation bar made available out-of-the-box. The router used is ", styledA("Rescript Router", "https://rescript-lang.org/docs/react/latest/router"), " which is very tiny and performant. The implementation of the nav links are located within the ", React.createElement("code", {
+                                    className: "font-mono underline"
+                                  }, "Link.res"), " component. To navigate back from a page, simply pass in \"..\" in the \"to\" props.")
                         }), React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Dark mode",
                           icon: "dark",

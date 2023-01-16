@@ -16,16 +16,16 @@ let make = () => {
         <div>
           <h1 className="text-[#E84F4F] font-semibold text-4xl mb-5">{"You did it!"->React.string}</h1>
           <h3 className="text-xl mb-8">{"You've successfully created a project with "->React.string}
-            <span className="">{"Rescript"->React.string}</span>
+            <span className="text-[#E84F4F] hover:bg-[#f5d5d5]">{"Rescript"->React.string}</span>
             {" + "->React.string}
-            <span className="">{"React"->React.string}</span>
+            <span className="text-[#E84F4F] hover:bg-[#f5d5d5]">{"React"->React.string}</span>
             {". What's next?"->React.string}
           </h3>
           <nav>
             <ul className="flex gap-1">
-              <li><a className="pr-3 hover:text-[#E84F4F] transition-colors duration-200" href="/">{"Home"->React.string}</a></li>
-              <li><a className="border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200" href="/features">{"Features"->React.string}</a></li>
-              <li><a className="border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200" href="/404">{"404"->React.string}</a></li>
+              <li><Link to="/" className="pr-3 hover:text-[#E84F4F] transition-colors duration-200">{"Home"->React.string}</Link></li>
+              <li><Link to="/features" className="border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200">{"Features"->React.string}</Link></li>
+              <li><Link to="/404" className="border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200">{"404"->React.string}</Link></li>
             </ul>
           </nav>
         </div>
@@ -55,11 +55,11 @@ let make = () => {
         </Summary>
         <Summary title="Routing" icon="router">
           <p>
-            {"This template also includes routing and navigation bar made available out-of-the-box. However, the router used is "->React.string}
+            {"This template also includes routing and navigation bar made available out-of-the-box. The router used is "->React.string}
             {styledA("Rescript Router", "https://rescript-lang.org/docs/react/latest/router")}
-            {" which might not be suitable for SPA that stores a lot of state. The conquest for using "->React.string}
-            {styledA("React Router", "https://reactrouter.com/en/main")}
-            {" instead are currently ongoing."->React.string}
+            {" which is very tiny and performant. The implementation of the nav links are located within the "->React.string}
+            <code className="font-mono underline">{"Link.res"->React.string}</code>
+            {" component. To navigate back from a page, simply pass in \"..\" in the \"to\" props."->React.string}
           </p>
         </Summary>
         <Summary title="Dark mode" icon="dark">

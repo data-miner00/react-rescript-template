@@ -23,7 +23,7 @@
     <a href="https://github.com/data-miner00/react-rescript-template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/data-miner00/react-rescript-template">View Demo</a>
+    <a href="https://react-rescript-template-kohl.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/data-miner00/react-rescript-template/issues">Report Bug</a>
     ·
@@ -179,8 +179,9 @@ _To use this template for personal use or contribution, simply perform the follo
 - [x] Add Styling
   - [ ] Sass
   - [x] Tailwind
-- [ ] Dark mode
+- [x] Dark mode
 - [ ] Add PWA Manifest
+- [ ] Responsive styles
 
 See the [open issues](https://github.com/data-miner00/react-rescript-template/issues) for a full list of proposed features (and known issues).
 

@@ -5,9 +5,9 @@ let make = () => {
       <div className="text-2xl font-semibold">{"React w/ Rescript"->React.string}</div>
       <nav className="flex items-center">
         <ul className="flex gap-6 items-center" style={ReactDOM.Style.make(~fontWeight="600", ())}>
-          <li><a href="/" className="hover:underline">{"Home"->React.string}</a></li>
-          <li><a href="/features" className="hover:underline">{"Features"->React.string}</a></li>
-          <li><a href="/about" className="hover:underline">{"About"->React.string}</a></li>
+          <li><Link to="/" className="hover:underline">{"Home"->React.string}</Link></li>
+          <li><Link to="/features" className="hover:underline">{"Features"->React.string}</Link></li>
+          <li><Link to="/about" className="hover:underline">{"About"->React.string}</Link></li>
         </ul>
         <ul className="flex gap-5 items-center pl-6 ml-6 border-l border-gray-200 border-solid">
           <li>
