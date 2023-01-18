@@ -72,12 +72,18 @@ function Summary(Props) {
     }
   };
   return React.createElement("div", {
-              className: "relative pt-[0.4rem] pb-4 pl-20 after:content-[''] first-of-type:before:border-transparent last-of-type:after:border-transparent after:border-l after:border-solid after:border-gray-200 after:absolute after:left-0 after:top-[calc(50%+25px)] after:h-[calc(50%-25px)] before:content-[''] before:border-l before:border-solid before:border-gray-200 before:absolute before:left-0 before:bottom-[calc(50%+25px)] before:h-[calc(50%-25px)] dark:after:border-gray-600 dark:before:border-gray-600 dark:last-of-type:after:border-transparent dark:first-of-type:before:border-transparent"
-            }, React.createElement("i", {
-                  className: "flex place-items-center place-content-center w-8 h-8 lg:w-[50px] lg:h-[50px] absolute top-[calc(50%-25px)] -left-[26px] border-solid border-gray-200 border rounded-lg dark:border-gray-600"
-                }, getIcon(icon)), React.createElement("div", undefined, React.createElement("h1", {
-                      className: "text-xl font-medium mb-2"
-                    }, title), children));
+              className: "flex md:block md:relative pt-[0.4rem] pb-4 pl-2 md:pl-20 after:content-[''] first-of-type:before:border-transparent last-of-type:after:border-transparent after:border-l after:border-solid after:border-gray-200 after:absolute after:left-0 after:top-[calc(50%+25px)] after:h-[calc(50%-25px)] before:content-[''] before:border-l before:border-solid before:border-gray-200 before:absolute before:left-0 before:bottom-[calc(50%+25px)] before:h-[calc(50%-25px)] dark:after:border-gray-600 dark:before:border-gray-600 dark:last-of-type:after:border-transparent dark:first-of-type:before:border-transparent"
+            }, React.createElement("div", {
+                  className: "basis-1/6"
+                }, React.createElement("i", {
+                      className: "flex place-items-center place-content-center w-8 h-8 lg:w-[50px] lg:h-[50px] md:absolute top-[calc(50%-25px)] -left-[26px] border-solid border-transparent md:border-gray-200 border rounded-lg dark:border-gray-600"
+                    }, getIcon(icon))), React.createElement("div", {
+                  className: "basis-5/6"
+                }, React.createElement("div", {
+                      className: "w-full"
+                    }, React.createElement("h1", {
+                          className: "text-xl font-medium mb-2"
+                        }, title), children)));
 }
 
 var make = Summary;

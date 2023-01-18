@@ -8,7 +8,7 @@ function Default(Props) {
   return React.createElement("div", {
               className: "min-h-screen flex place-items-center"
             }, React.createElement(Header$RescriptProjectTemplate.make, {}), React.createElement("main", {
-                  className: "max-w-[1400px] mx-auto my-auto"
+                  className: "md:max-w-[1400px] mx-auto my-auto"
                 }, children));
 }
 

@@ -6,15 +6,15 @@ import * as ThemeSwitcher$RescriptProjectTemplate from "./ThemeSwitcher.bs.js";
 
 function Header(Props) {
   return React.createElement("div", {
-              className: "py-5 absolute top-0 left-0 w-full"
+              className: "py-5 absolute top-0 left-0 w-full px-6 md:px-0"
             }, React.createElement("header", {
-                  className: "flex max-w-[1400px] mx-auto justify-between"
+                  className: "flex md:max-w-[1400px] mx-auto justify-between"
                 }, React.createElement("div", {
-                      className: "text-2xl font-semibold"
+                      className: "md:text-2xl font-semibold"
                     }, "React w/ Rescript"), React.createElement("nav", {
                       className: "flex items-center"
                     }, React.createElement("ul", {
-                          className: "flex gap-6 items-center",
+                          className: "hidden md:flex gap-6 items-center",
                           style: {
                             fontWeight: "600"
                           }
