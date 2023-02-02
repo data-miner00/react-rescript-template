@@ -1,10 +1,10 @@
 @react.component
 let make = () => {
-  <div className="py-5 absolute top-0 left-0 w-full">
-    <header className="flex max-w-[1400px] mx-auto justify-between">
-      <div className="text-2xl font-semibold">{"React w/ Rescript"->React.string}</div>
+  <div className="py-5 absolute top-0 left-0 w-full px-6 md:px-0">
+    <header className="flex md:max-w-[1400px] mx-auto justify-between">
+      <div className="md:text-2xl font-semibold">{"React w/ Rescript"->React.string}</div>
       <nav className="flex items-center">
-        <ul className="flex gap-6 items-center" style={ReactDOM.Style.make(~fontWeight="600", ())}>
+        <ul className="hidden md:flex gap-6 items-center" style={ReactDOM.Style.make(~fontWeight="600", ())}>
           <li><Link to="/" className="hover:underline">{"Home"->React.string}</Link></li>
           <li><Link to="/features" className="hover:underline">{"Features"->React.string}</Link></li>
           <li><Link to="/about" className="hover:underline">{"About"->React.string}</Link></li>
