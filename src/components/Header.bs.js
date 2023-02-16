@@ -6,15 +6,17 @@ import * as ThemeSwitcher$RescriptProjectTemplate from "./ThemeSwitcher.bs.js";
 
 function Header(Props) {
   return React.createElement("div", {
-              className: "py-5 absolute top-0 left-0 w-full px-6 md:px-0"
+              className: "py-5 absolute top-0 left-0 w-full px-6 lg:px-0"
             }, React.createElement("header", {
-                  className: "flex md:max-w-[1400px] mx-auto justify-between"
-                }, React.createElement("div", {
-                      className: "md:text-2xl font-semibold"
-                    }, "React w/ Rescript"), React.createElement("nav", {
+                  className: "flex lg:max-w-[1400px] mx-auto justify-between"
+                }, React.createElement(Link$RescriptProjectTemplate.make, {
+                      to: "/",
+                      className: "lg:text-2xl font-semibold",
+                      children: "React w/ Rescript"
+                    }), React.createElement("nav", {
                       className: "flex items-center"
                     }, React.createElement("ul", {
-                          className: "hidden md:flex gap-6 items-center",
+                          className: "hidden lg:flex gap-6 items-center",
                           style: {
                             fontWeight: "600"
                           }
@@ -31,7 +33,7 @@ function Header(Props) {
                                   className: "hover:underline",
                                   children: "About"
                                 }))), React.createElement("ul", {
-                          className: "flex gap-5 items-center pl-6 ml-6 border-l border-gray-200 border-solid"
+                          className: "flex gap-5 items-center pl-6 ml-6 lg:border-l border-gray-200 border-solid"
                         }, React.createElement("li", undefined, React.createElement("a", {
                                   className: "block",
                                   title: "GitHub Repo",

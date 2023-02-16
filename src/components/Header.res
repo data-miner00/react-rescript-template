@@ -1,15 +1,15 @@
 @react.component
 let make = () => {
-  <div className="py-5 absolute top-0 left-0 w-full px-6 md:px-0">
-    <header className="flex md:max-w-[1400px] mx-auto justify-between">
-      <div className="md:text-2xl font-semibold">{"React w/ Rescript"->React.string}</div>
+  <div className="py-5 absolute top-0 left-0 w-full px-6 lg:px-0">
+    <header className="flex lg:max-w-[1400px] mx-auto justify-between">
+      <Link className="lg:text-2xl font-semibold" to="/">{"React w/ Rescript"->React.string}</Link>
       <nav className="flex items-center">
-        <ul className="hidden md:flex gap-6 items-center" style={ReactDOM.Style.make(~fontWeight="600", ())}>
+        <ul className="hidden lg:flex gap-6 items-center" style={ReactDOM.Style.make(~fontWeight="600", ())}>
           <li><Link to="/" className="hover:underline">{"Home"->React.string}</Link></li>
           <li><Link to="/features" className="hover:underline">{"Features"->React.string}</Link></li>
           <li><Link to="/about" className="hover:underline">{"About"->React.string}</Link></li>
         </ul>
-        <ul className="flex gap-5 items-center pl-6 ml-6 border-l border-gray-200 border-solid">
+        <ul className="flex gap-5 items-center pl-6 ml-6 lg:border-l border-gray-200 border-solid">
           <li>
             <a href="https://github.com/data-miner00/react-rescript-template" title="GitHub Repo" target="_blank" className="block">
               <svg

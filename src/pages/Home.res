@@ -8,20 +8,20 @@ let make = () => {
   }
 
   <div className="app">
-    <main className="md:max-w-[1280px] mx-auto md:flex md:items-center">
-      <div className="basis-1/2 flex items-center flex-col md:flex-row md:pr-20 px-6 md:px-0 pt-20 md:pt-0">
-        <div className="mx-auto md:ml-0 md:mr-10 w-32 h-32 shrink-0 mb-5 md:mb-0">
+    <main className="lg:max-w-[1280px] mx-auto lg:flex lg:items-center">
+      <div className="basis-1/2 flex items-center flex-col lg:flex-row lg:pr-20 px-6 lg:px-0 pt-20 lg:pt-0">
+        <div className="mx-auto lg:ml-0 lg:mr-10 w-32 h-32 shrink-0 mb-5 lg:mb-0">
           <img className="w-full h-full" src={logo} alt="Rescript logo" />
         </div>
         <div>
-          <h1 className="text-[#E84F4F] text-center md:text-left font-semibold text-4xl mb-5">{"You did it!"->React.string}</h1>
-          <h3 className="text-xl mb-8 text-center md:text-left">{"You've successfully created a project with "->React.string}
+          <h1 className="text-[#E84F4F] text-center lg:text-left font-semibold text-4xl mb-5">{"You did it!"->React.string}</h1>
+          <h3 className="text-xl mb-8 text-center lg:text-left">{"You've successfully created a project with "->React.string}
             <span className="text-[#E84F4F] hover:bg-[#f5d5d5]">{"Rescript"->React.string}</span>
             {" + "->React.string}
             <span className="text-[#E84F4F] hover:bg-[#f5d5d5]">{"React"->React.string}</span>
             {". What's next?"->React.string}
           </h3>
-          <nav className="mx-auto w-fit md:w-full text-sm md:text-base">
+          <nav className="mx-auto w-fit lg:w-full text-sm lg:text-base">
             <ul className="flex gap-1">
               <li><Link to="/" className="pr-3 hover:text-[#E84F4F] transition-colors duration-200">{"Home"->React.string}</Link></li>
               <li><Link to="/features" className="border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200">{"Features"->React.string}</Link></li>
@@ -30,7 +30,7 @@ let make = () => {
           </nav>
         </div>
       </div>
-      <div className="basis-1/2 p-6 md:p-0">
+      <div className="basis-1/2 p-6 lg:p-0">
         <Summary title="Rescript + React" icon="default">
           <p>
             {"React's powerful infrastructure paired with Rescript's robustly typed language system to propel web application development to the next level. React's "->React.string}
