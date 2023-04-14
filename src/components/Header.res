@@ -1,8 +1,11 @@
+@module("../assets/rescript.svg")
+external logo: string = "default"
+
 @react.component
 let make = () => {
   <div className="py-5 absolute top-0 left-0 w-full px-6 lg:px-0">
     <header className="flex lg:max-w-[1400px] mx-auto justify-between">
-      <Link className="lg:text-2xl font-semibold" to="/">{"React w/ Rescript"->React.string}</Link>
+      <Link className="lg:text-2xl font-semibold flex items-center" to="/"><img src={logo} alt="Rescript logo" className="w-6 md:w-8 mr-2 md:mr-3  " /><span className="uppercase tracking-widest font-bold font-mono">{"Reiss"->React.string}</span></Link>
       <nav className="flex items-center">
         <ul className="hidden lg:flex gap-6 items-center" style={ReactDOM.Style.make(~fontWeight="600", ())}>
           <li><Link to="/" className="hover:underline">{"Home"->React.string}</Link></li>
