@@ -5,15 +5,15 @@ import * as Link$RescriptProjectTemplate from "../components/Link.bs.js";
 
 function NotFound(Props) {
   return React.createElement("div", {
-              className: "py-[150px] pt-28"
+              className: "py-[150px] pt-28 flex flex-col items-center"
             }, React.createElement("h1", {
-                  className: "text-9xl lg:text-[150px] tracking-wider text-center font-bold mb-2"
-                }, 404), React.createElement("p", {
-                  className: "text-xl font-semibold text-center mb-5"
-                }, "Whoops... Page Not Found!!!"), React.createElement(Link$RescriptProjectTemplate.make, {
+                  className: "font-bold text-5xl tracking-wide uppercase block mb-2 text-slate-800"
+                }, "404 Not Found"), React.createElement("p", {
+                  className: "font-semibold text-xl block text-gray-600 mb-4"
+                }, "The page that you are trying to access could not be found."), React.createElement(Link$RescriptProjectTemplate.make, {
                   to: "..",
-                  className: "bg-slate-700 text-gray-50 hover:bg-slate-600 rounded px-5 py-2 mx-auto w-fit block text-xl",
-                  children: "Take me back"
+                  className: "py-1 px-4 block border border-solid border-gray-200 rounded text-xl hover:bg-gray-50",
+                  children: "Return"
                 }));
 }
 
