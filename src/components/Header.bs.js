@@ -37,10 +37,6 @@ function Header(Props) {
                                   to: "/features",
                                   className: "hover:underline",
                                   children: "Features"
-                                })), React.createElement("li", undefined, React.createElement(Link$RescriptProjectTemplate.make, {
-                                  to: "/about",
-                                  className: "hover:underline",
-                                  children: "About"
                                 }))), React.createElement("ul", {
                           className: "flex gap-5 items-center pl-6 ml-6 lg:border-l border-gray-200 border-solid"
                         }, React.createElement("li", undefined, React.createElement("a", {

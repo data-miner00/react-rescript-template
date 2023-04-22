@@ -10,7 +10,6 @@ let make = () => {
         <ul className="hidden lg:flex gap-6 items-center" style={ReactDOM.Style.make(~fontWeight="600", ())}>
           <li><Link to="/" className="hover:underline">{"Home"->React.string}</Link></li>
           <li><Link to="/features" className="hover:underline">{"Features"->React.string}</Link></li>
-          <li><Link to="/about" className="hover:underline">{"About"->React.string}</Link></li>
         </ul>
         <ul className="flex gap-5 items-center pl-6 ml-6 lg:border-l border-gray-200 border-solid">
           <li>
