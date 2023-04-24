@@ -30,10 +30,12 @@ function Home(Props) {
                               className: "text-[#E84F4F] text-center lg:text-left font-semibold text-4xl mb-5"
                             }, "You did it!"), React.createElement("h3", {
                               className: "text-xl mb-8 text-center lg:text-left"
-                            }, "You've successfully created a project with ", React.createElement("span", {
-                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]"
-                                }, "Rescript"), " + ", React.createElement("span", {
-                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]"
+                            }, "You've successfully created a project with ", React.createElement("a", {
+                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]",
+                                  href: "https://rescript-lang.org"
+                                }, "Rescript"), " + ", React.createElement("a", {
+                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]",
+                                  href: "https://react.dev"
                                 }, "React"), ". What's next?"), React.createElement("nav", {
                               className: "mx-auto w-fit lg:w-full text-sm lg:text-base"
                             }, React.createElement("ul", {

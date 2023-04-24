@@ -16,9 +16,9 @@ let make = () => {
         <div>
           <h1 className="text-[#E84F4F] text-center lg:text-left font-semibold text-4xl mb-5">{"You did it!"->React.string}</h1>
           <h3 className="text-xl mb-8 text-center lg:text-left">{"You've successfully created a project with "->React.string}
-            <span className="text-[#E84F4F] hover:bg-[#f5d5d5]">{"Rescript"->React.string}</span>
+            <a href="https://rescript-lang.org" className="text-[#E84F4F] hover:bg-[#f5d5d5]">{"Rescript"->React.string}</a>
             {" + "->React.string}
-            <span className="text-[#E84F4F] hover:bg-[#f5d5d5]">{"React"->React.string}</span>
+            <a href="https://react.dev" className="text-[#E84F4F] hover:bg-[#f5d5d5]">{"React"->React.string}</a>
             {". What's next?"->React.string}
           </h3>
           <nav className="mx-auto w-fit lg:w-full text-sm lg:text-base">
