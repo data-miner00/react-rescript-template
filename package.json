@@ -1,4 +1,9 @@
 {
+  "name": "reiss-react-rescript-template",
+  "version": "1.0.0",
+  "description": "A React template built with Esbuild and ReScript, embellish with TailwindCSS.",
+  "author": "shaun",
+  "license": "MIT",
   "scripts": {
     "build:esb": "esbuild src/index.bs.js --bundle --minify --outfile=public/dist/bundle.js --loader:.png=file --loader:.svg=file --loader:.jpg=file --public-path=dist",
     "watch:esb": "node esbuild.config.js",
@@ -12,16 +17,18 @@
     "purge": "node scripts/purgeDist.js ./public/dist"
   },
   "dependencies": {
+    "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@rescript/react": "^0.10.3",
+    "@types/react": "^18.2.14",
     "concurrently": "^7.6.0",
     "esbuild": "^0.16.1",
     "lite-server": "^2.6.1",
     "rescript": "^10.0.1",
     "rescript-webapi": "^0.7.0",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.3.2"
   }
 }

@@ -39,7 +39,6 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#design">Design</a></li>
       </ul>
     </li>
     <li>
@@ -86,26 +85,6 @@ The technologies and tools used within this template.
 - TailwindCSS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- DESIGN -->
-
-### Design
-
-Charts are very useful to let people know the high level designs of the project. Usually people will use some of more sophisticated third-party diagramming tools such as Enterprese Architect or a light-weighted [draw.io](https://app.diagrams.net).
-
-Contrary to the public's awareness, GitHub actually supports diagramming language [Mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams) that can generate a wide array of diagrams such as flowchart, sequence diagram, class diagram and more!
-
-```mermaid
-graph TD;
-    PorsgreSQL-->Laravel;
-    avax[Avalanche C-Chain]-->Laravel;
-    Laravel-->Vue.js;
-    Node.js-->Vue.js;
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## Getting Started
 
@@ -182,6 +161,8 @@ _To use this template for personal use or contribution, simply perform the follo
 - [x] Dark mode
 - [ ] Add PWA Manifest
 - [ ] Responsive styles
+- [ ] Mobile Sidebar
+- [ ] New features page
 
 See the [open issues](https://github.com/data-miner00/react-rescript-template/issues) for a full list of proposed features (and known issues).
 
@@ -218,10 +199,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 List of resources that are helpful and would like to give credit to.
 
-- [Why You Should Use ESBuild OVER Webpack for React Projects](https://www.youtube.com/watch?v=VmgRBwMIRBE)
-- [esbuild homepage](https://esbuild.github.io/)
-- [SyntaxError: Support for the experimental syntax jsx isn’t currently enabled](https://akashmittal.com/code-example-syntaxerror-support-for-the-experimental-syntax-jsx-isnt-currently-enabled/)
-- [Robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+- [ReScript](https://rescript-lang.org/)
+- [Rescript Cheatsheet](https://yangdanny97.github.io/blog/2022/09/14/rescript-tutorial)
+- [The ultimate answer to Belt vs Js in ReScript](https://dev.to/dzakh/the-ultimate-answer-to-belt-vs-js-in-rescript-4dlp)
 - [useHooks](https://usehooks.com/)
 - [Configuring Public Path](https://esbuild.github.io/api/#public-path)
 - [Issue Template](https://github.com/Josee9988/project-template)

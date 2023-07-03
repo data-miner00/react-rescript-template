@@ -1,8 +1,8 @@
 @react.component
 let make = () => {
-  <div className="py-[150px]  pt-28">
-    <h1 className="text-9xl text-center font-bold mb-10">{404->React.int}</h1>
-    <p className="text-3xl font-semibold text-center mb-5">{"The page that you are looking for could not be found"->React.string}</p>
-    <a className="border-2 border-solid border-white rounded px-5 py-2 mx-auto w-fit block text-2xl" href="/">{"Take me back"->React.string}</a>
+  <div className="py-[150px] pt-28 flex flex-col px-10 md:px-0 items-center  text-center">
+    <h1 className="font-bold text-4xl md:text-5xl tracking-wide uppercase block mb-2 text-slate-800 dark:text-white">{"404 Not Found"->React.string}</h1>
+    <p className="font-semibold text-lg md:text-xl block text-gray-600 mb-4 dark:text-gray-300">{"The page that you are trying to access could not be found."->React.string}</p>
+    <Link className="py-1 text-lg px-4 block border border-solid border-gray-200 rounded md:text-xl hover:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-600" to="..">{"Return"->React.string}</Link>
   </div>
 }

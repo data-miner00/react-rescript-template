@@ -17,25 +17,27 @@ function Home(Props) {
   return React.createElement("div", {
               className: "app"
             }, React.createElement("main", {
-                  className: "md:max-w-[1280px] mx-auto md:flex md:items-center"
+                  className: "lg:max-w-[1280px] mx-auto lg:flex lg:items-center"
                 }, React.createElement("div", {
-                      className: "basis-1/2 flex items-center flex-col md:flex-row md:pr-20 px-6 md:px-0 pt-20 md:pt-0"
+                      className: "basis-1/2 flex items-center flex-col lg:flex-row lg:pr-20 px-6 lg:px-0 pt-20 lg:pt-0"
                     }, React.createElement("div", {
-                          className: "mx-auto md:ml-0 md:mr-10 w-32 h-32 shrink-0 mb-5 md:mb-0"
+                          className: "mx-auto lg:ml-0 lg:mr-10 w-32 h-32 shrink-0 mb-5 lg:mb-0"
                         }, React.createElement("img", {
                               className: "w-full h-full",
                               alt: "Rescript logo",
                               src: logo
                             })), React.createElement("div", undefined, React.createElement("h1", {
-                              className: "text-[#E84F4F] text-center md:text-left font-semibold text-4xl mb-5"
+                              className: "text-[#E84F4F] text-center lg:text-left font-semibold text-4xl mb-5"
                             }, "You did it!"), React.createElement("h3", {
-                              className: "text-xl mb-8 text-center md:text-left"
-                            }, "You've successfully created a project with ", React.createElement("span", {
-                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]"
-                                }, "Rescript"), " + ", React.createElement("span", {
-                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]"
+                              className: "text-xl mb-8 text-center lg:text-left"
+                            }, "You've successfully created a project with ", React.createElement("a", {
+                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]",
+                                  href: "https://rescript-lang.org"
+                                }, "Rescript"), " + ", React.createElement("a", {
+                                  className: "text-[#E84F4F] hover:bg-[#f5d5d5]",
+                                  href: "https://react.dev"
                                 }, "React"), ". What's next?"), React.createElement("nav", {
-                              className: "mx-auto w-fit md:w-full text-sm md:text-base"
+                              className: "mx-auto w-fit lg:w-full text-sm lg:text-base"
                             }, React.createElement("ul", {
                                   className: "flex gap-1"
                                 }, React.createElement("li", undefined, React.createElement(Link$RescriptProjectTemplate.make, {
@@ -51,7 +53,7 @@ function Home(Props) {
                                           className: "border-l border-solid border-gray-200 dark:border-gray-600 px-3 hover:text-[#E84F4F] transition-colors duration-200",
                                           children: "404"
                                         })))))), React.createElement("div", {
-                      className: "basis-1/2 p-6 md:p-0"
+                      className: "basis-1/2 p-6 lg:p-0"
                     }, React.createElement(Summary$RescriptProjectTemplate.make, {
                           title: "Rescript + React",
                           icon: "default",
